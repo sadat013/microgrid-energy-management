@@ -2,6 +2,10 @@
 
 ## 2026-10-06
 
+### Published
+
+- Public repository: <https://github.com/sadat013/microgrid-energy-management>
+
 ### Created
 
 - GitHub-oriented repository structure.
@@ -31,6 +35,7 @@
 - Added import-safe `main` guards and command-line scenario selection.
 - Changed plot destinations to unique controller/scenario filenames in
   `results/` to prevent overwriting.
+- Removed inherited trailing whitespace from `src/python/run.py`.
 
 ### Excluded
 

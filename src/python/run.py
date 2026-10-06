@@ -20,7 +20,7 @@ DATA_DIR = PROJECT_ROOT / "data" / "raw"
 
 def compute_remaining_time(EV_connected):  # This function computes the remaining time for the current EV connection
     # Find the next time step where EV is disconnected and return its index
-    remaining_time = next((i for i, value in enumerate(EV_connected) if value == 0), len(EV_connected)) 
+    remaining_time = next((i for i, value in enumerate(EV_connected) if value == 0), len(EV_connected))
     return remaining_time * delta_t
 
 class Results:
@@ -52,12 +52,12 @@ class Results:
 
 
         # Initialize SOCs
-        if   Scenario == 'S1': self.SOC_ev[0] = 0.6*C_ev ; self.SOC_bss[0] = 0.5*C_bss 
+        if   Scenario == 'S1': self.SOC_ev[0] = 0.6*C_ev ; self.SOC_bss[0] = 0.5*C_bss
         elif Scenario == 'S2': self.SOC_ev[0] = 0.7*C_ev ; self.SOC_bss[0] = 0.5*C_bss
-        elif Scenario == 'S3': self.SOC_ev[0] = 0.3*C_ev ; self.SOC_bss[0] = 0.5*C_bss 
-        elif Scenario == 'S4': self.SOC_ev[0] = 0.3*C_ev ; self.SOC_bss[0] = 0.5*C_bss          
+        elif Scenario == 'S3': self.SOC_ev[0] = 0.3*C_ev ; self.SOC_bss[0] = 0.5*C_bss
+        elif Scenario == 'S4': self.SOC_ev[0] = 0.3*C_ev ; self.SOC_bss[0] = 0.5*C_bss
 
-        self.t = np.linspace(0, time_steps*delta_t, time_steps)  
+        self.t = np.linspace(0, time_steps*delta_t, time_steps)
 
     def append_res(self, P_pv, P_gen, P_bss, P_ev, P_hp, t):
         self.P_pv[t] = P_pv
@@ -106,10 +106,10 @@ def run_sim(control_function, Scenario, model=None, controller_name="controller"
 
         # Call the control function to determine the power outputs
         P_pv, P_gen, P_bss, P_ev, P_hp = control_function(P_l, P_pv, EV_c,
-                                                    EV_remaining_time, results.P_gen[t-1], 
+                                                    EV_remaining_time, results.P_gen[t-1],
                                                     results.SOC_bss[t-1]/C_bss, results.SOC_ev[t-1]/C_ev,
                                                     P_loss, T_set, results.T_hp[t-1], model)
-        
+
         # Append results to the results object and update SOCs
         results.append_res(P_pv, P_gen, P_bss, P_ev, P_hp, t)
 
