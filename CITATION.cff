@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this academic project, please cite it using this metadata."
+title: "Rule-Based and Optimization-Based Microgrid Energy Management"
+type: software
+authors:
+  - family-names: Pandey
+    given-names: Bishnu
+  - family-names: Aziz
+    given-names: Md Atiq
+  - family-names: Zikrillah
+    given-names: Fadel Muhammed
+year: 2026
+license: MIT
+repository-code: "https://github.com/sadat013/microgrid-energy-management"
+keywords:
+  - microgrid
+  - energy-management-system
+  - rule-based-control
+  - mixed-integer-optimization
+  - pyomo
+  - photovoltaic
+  - battery-storage
+  - electric-vehicle
+  - heat-pump
