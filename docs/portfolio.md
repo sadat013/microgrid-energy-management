@@ -34,9 +34,16 @@ storage while meeting an EV departure target and respecting device limits.
 
 ## My technical contribution
 
-As part of a three-person team, I contributed to **[confirm Md Atiq Aziz's
-specific responsibilities: controller design, Pyomo formulation, Python
-implementation, scenario analysis, figures and/or report sections]**.
+As part of a three-person DENSYS team, I contributed to the engineering analysis,
+scenario interpretation, figures and technical documentation for the
+rule-based and optimization-based energy-management approaches. I examined how
+the dispatch logic and model constraints coordinate PV, stationary storage, an
+EV, a heat pump and generator backup across the four operating scenarios. For
+the public release, I also organized the source code and datasets, checked the
+input-energy totals, and documented the difference between report-supported
+results and results reproduced during the repository audit. This was a
+collaborative project; I do not claim sole authorship of every controller or
+code module.
 
 ## Tools and methods
 
@@ -70,9 +77,13 @@ technical writing, reproducibility and responsible result communication.
 
 ## What I learned
 
-The project shows why a transparent baseline is valuable when evaluating an
-optimizer, and why forecast horizon, terminal constraints, state units and
-result provenance must be explicit before claiming predictive performance.
+I learned why a transparent rule-based controller is a valuable baseline for
+evaluating an optimization-based energy-management strategy. The project also
+strengthened my understanding of how objective weights, forecast horizon,
+terminal state-of-charge constraints, thermal comfort and consistent state
+units affect the apparent performance of a microgrid controller. Most
+importantly, I learned to trace engineering claims back to executable code,
+validated inputs and clearly identified result sources.
 
 ## Suggested visuals
 
@@ -89,15 +100,17 @@ result provenance must be explicit before claiming predictive performance.
 
 ## CV bullet
 
-Developed and documented rule-based and Pyomo mixed-integer energy-management
-controllers for a PV-battery-EV-heat-pump microgrid across four 24-hour
-scenarios at 1.5-minute resolution.
+Contributed to a three-person DENSYS project comparing rule-based and Pyomo
+mixed-integer energy-management controllers for a PV-battery-EV-heat-pump
+microgrid across four 24-hour scenarios at 1.5-minute resolution.
 
 ## LinkedIn project description
 
-Built a Python microgrid energy-management study comparing transparent
-rule-based dispatch with constrained mixed-integer control for PV, stationary
-storage, an EV with V2H capability, a heat pump and generator backup. The work
-covered four daily scenarios and included energy/SOC dynamics, thermal comfort,
-device constraints, scenario visualization and a reproducibility-focused
-GitHub publication. Team contribution details: **[confirm before publishing]**.
+As part of a three-person DENSYS team, I contributed to a Python microgrid
+energy-management study comparing transparent rule-based dispatch with
+constrained mixed-integer control for PV, stationary storage, an EV with V2H
+capability, a heat pump and generator backup. My work focused on engineering
+analysis, scenario interpretation, figures and technical documentation. I also
+prepared the public repository by organizing the code and data, checking input
+energy totals, and clearly separating report-supported results from reproduced
+checks.

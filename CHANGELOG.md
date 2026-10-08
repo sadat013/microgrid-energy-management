@@ -1,5 +1,16 @@
 # Change log
 
+## 2026-10-08
+
+### Portfolio details completed
+
+- Added Md Atiq Aziz's evidence-bounded team contribution to the README and
+  portfolio summary.
+- Rewrote the learning statement, CV bullet and LinkedIn description in
+  accurate first-person wording.
+- Added the academic contact email and GitHub portfolio link; no unsupported
+  LinkedIn URL was invented.
+
 ## 2026-10-06
 
 ### Published

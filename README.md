@@ -244,10 +244,13 @@ engineering decisions.
 ## Academic context and contribution
 
 This work was prepared as a three-person DENSYS 2.0 team assignment by Bishnu
-Pandey, Md Atiq Aziz and Fadel Muhammed Zikrillah. The supplied files do not
-identify each person's individual contribution. Md Atiq Aziz should replace
-the contribution placeholder in [the portfolio summary](docs/portfolio.md)
-before presenting the project professionally.
+Pandey, Md Atiq Aziz and Fadel Muhammed Zikrillah. As part of the team, Md Atiq
+Aziz contributed to the engineering analysis, scenario interpretation, figures
+and technical documentation for the rule-based and optimization-based control
+approaches. For the public release, he also organized the source code and data,
+checked the input-energy totals, and documented the reproducibility limits. The
+available records do not support assigning sole authorship of individual code
+modules to any one contributor.
 
 ## Citation, license and contact
 
@@ -256,4 +259,4 @@ repository code and documentation are released under the [MIT License](LICENSE)
 where contributor rights permit. Dataset, report and solver notices are in
 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
-Contact: **Md Atiq Aziz** - [add preferred email, LinkedIn and portfolio URL]
+Contact: **Md Atiq Aziz** - [atiqaziz@iut-dhaka.edu](mailto:atiqaziz@iut-dhaka.edu) - [GitHub portfolio](https://github.com/sadat013)
